@@ -1,0 +1,125 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+
+.derecha{
+    display: flex;             /* todo lo del div en una sola columna */
+    justify-content: flex-end; /* empuja todo a la derecha */
+    align-items: center;       /* centra verticalmente */
+    gap: 13px;                 /* espacio entre elementos */
+    padding: 10px 20px;        /* separación de bordes */
+}
+
+.derecha a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.derecha img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.letra:nth-child(1) { color: #4285F4; } /*Cada uno representa una letra del Google*/
+.letra:nth-child(2) { color: #EA4335; }
+.letra:nth-child(3) { color: #FBBC05; }
+.letra:nth-child(4) { color: #4285F4; }
+.letra:nth-child(5) { color: #34A853; }
+.letra:nth-child(6) { color: #EA4335; }
+
+.buscador {
+    display: flex;
+    justify-content: center;
+
+}
+
+.buscador input {
+    width: 550px;
+    height: 35px;
+    border: 0.01px solid #ccc; 
+    border-radius: 10px;
+    background-image: url("../imagenes/busqueda.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    font-size: 14px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.footer {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #70757a;
+}
+
+/* Línea superior */
+.footer-top {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+}
+
+/* Línea inferior */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+/* Enlaces */
+.footer a {
+    text-decoration: none;
+    color: #70757a;
+    margin-right: 20px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Agrupaciones */
+.left, .right {
+    display: flex;
+}
