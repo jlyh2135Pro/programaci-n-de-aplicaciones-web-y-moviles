@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte Teórica</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #badede;
+        }
+
+        .card {
+            border-radius: 15px;
+        }
+
+        footer{
+            background-color: #3142df;
+            margin-top:50px;
+            padding:20px;
+            text-align:center;
+            color:whitesmoke;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--creo una barra de navegación para posicionar el nombre de la pag y los botones de navegación-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> 
+        <div class="container">
+            <!--Uso navbar-brand para mostrar de forma destacada el nombre de la barra de navegación-->
+            <a class="navbar-brand">
+                Parte 1: Teoría React
+            </a>
+            <div>
+                <!--Creo mi botón de navegación-->
+                <a class="btn btn-light" href="semaforo.html">
+                    Práctica
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-4">
+
+            <!-- Bloque pregunta 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h4>
+                            ¿Qué hace el hook useState?
+                        </h4>
+                        <p>
+                            El hook useState permite añadir y gestionar variables de estado local en componentes funcionales de React. 
+                            Cuando el estado cambia, fuerza al componente a renderizarse de nuevo para reflejar la información actualizada en pantalla.  
+                        </p>
+                        <p>
+                            Un ejemplo sería un contador que cambia de valor cada que iteraciona en cumplimiento a una condición incrementandose o decreciendo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bloque pregunta 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h4>
+                            ¿Qué es un Fragmento (&lt;&gt; &lt;/&gt;) y para qué sirve?
+                        </h4>
+                        <p>
+                            En el desarrollo web, el Fragmento &lt;&gt; &lt;/&gt; (abreviatura de React.Fragment) 
+                            es una sintaxis que permite agrupar múltiples elementos JSX en un componente sin añadir nodos adicionales o innecesarios al DOM real.
+                        </p>
+                        <p>
+                            Ayuda a mantener el código ordenado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bloque pregunta 3 -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h4>
+                            ¿Qué diferencia hay entre useContext y useState?
+                        </h4>
+                        <p>
+                            useState maneja datos locales dentro de un componente, es decir solo donde se declara.
+                        </p>
+                        <p>
+                            useContext comparte datos entre varios componentes de forma global.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Bloque pregunta 4 -->
+
+            <div class="col-md-6 mb-4">
+
+                <div class="card shadow h-100">
+
+                    <div class="card-body">
+
+                        <h4>
+                            ¿Cuál es la estructura básica de un componente funcional?
+                        </h4>
+                        <p>
+                            La estructura básica de un componente funcional (típicamente en bibliotecas como React) es una función de JavaScript 
+                            o TypeScript que recibe parámetros de entrada y devuelve elementos visuales en formato JSX.
+                        </p>
+                        <h5>
+                            Estructura Esencial
+                        </h5>
+                        <p>
+                            Se compone de tres partes clave:
+                        </p>
+                        <p>
+                            Importaciones: Carga las dependencias necesarias.
+                        </p>
+                        <p>
+                            Declaración: El nombre del componente (debe comenzar con mayúscula) y los parámetros.
+                        </p>
+                        <p>
+                            Retorno: El código JSX que define la interfaz de usuario.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+        <footer>
+            Examen primer parcial SEMANA 4
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
